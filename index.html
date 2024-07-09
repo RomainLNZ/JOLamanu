@@ -6,15 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>JOLamanu</title>
+    <title>JO-Lamanu</title>
 </head>
 
 <body>
-    <section id="map">
 
+    <nav>LOGO</nav>
+
+    <section id="search">
+        <div class="search__top">
+            <div class="search__zone">
+                <input class="search__input" type="text">
+                <img class="search__icon" src="/assets/img/icon/search.png" alt="search">
+            </div>
+            <div class="search__action">
+                <div class="itinerary"></div>
+                <div class="save"></div>
+                <div class="share"></div>
+            </div>
+        </div>
+        <div class="search__bottom"></div>
     </section>
+
+    <section id="map"></section>
     <!-- <script type="module" src="assets/js/index.js"></script> -->
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="assets/js/data/icons.js"></script>
+    <script src="assets/js/data/points.js"></script>
     <script src="assets/js/index.js"></script>
 
 </body>

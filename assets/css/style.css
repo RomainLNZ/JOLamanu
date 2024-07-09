@@ -1,9 +1,186 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
 }
+
+.leaflet-control-zoom .leaflet-bar .leaflet-control {
+    background-color: rgb(173, 109, 109);
+    height: 10rem;
+}   
+
+.leaflet-top > leaflet-touch {
+    background-color: blue;
+}
+.leaflet-bar{
+    background-color: blue;
+}
+.leaflet-control-layers{
+    background-color: blue;
+}
+.leaflet-touch{
+    background-color: blue;
+}
+
+.leaflet-control-container {
+    /* display: none; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;       
+    bottom: 3%;
+    right: 6%;
+    height: 15rem;
+}
+
+.leaflet-control-attribution .leaflet-control{
+    display: none;
+}
+
+.leaflet-top {
+    background-color: aquamarine;
+    height: 5rem;
+    width: 5rem;
+}
+
+.leaflet-container {
+    background: rgb(101, 73, 73);
+}
+
+.leaflet-touch .leaflet-control-zoom-in .leaflet-touch .leaflet-control-zoom-out {
+    font-size: 12px;
+    border-radius: 80%;
+    background: rgb(125, 67, 67);
+}
+
+
+nav {
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(77, 70, 70, 0.495);
+    margin-bottom: 3rem;
+    color:red;
+    font-size: 2rem;
+}
+
+#search {
+    width: 20%;
+    height: 60vh;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(46, 44, 44);
+    border-radius: .5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(77, 70, 70, 0.495);
+}
+
+.search__top {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.search__zone {
+    width: 85%;
+    height: 7%;
+    position: absolute;
+    top: 3%;
+    left: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    background: rgba(21, 20, 20, 0.9);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);}
+
+.search__input {
+    height: 96%;
+    width: 90%;
+    border: none;
+    font-size: 1rem;
+    background: rgba(21, 20, 20, 0.9);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);    color: white;
+
+}
+
+.search__input:focus {
+   outline: none;
+}
+
+.search__icon {
+    border: black 1px solid;
+}
+
+.search__action {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: yellow;
+}
+
+.search__action > div{
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px solid;
+}
+
+/* .itinerary {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    background: blue;
+}
+
+.save {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    background: white;
+}
+
+.share {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    background: red;
+} */
+
+/* .search__bottom {
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: .5rem;
+
+} */
 
 #map {
     width: 100%;
     height: 100vh;
+    position: relative;
+    z-index: 0;
 }
